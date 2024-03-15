@@ -12,23 +12,23 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "nuxt": "^3.10.2",
-    "vue": "^3.4.19",
-    "vue-router": "^4.2.5"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.1",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "@pinia/nuxt": "^0.5.1",
-    "@vueuse/core": "^10.7.2",
-    "@vueuse/electron": "^10.7.2",
-    "@vueuse/nuxt": "^10.7.2",
-    "electron": "^28.2.3",
-    "electron-builder": "^24.9.1",
+    "@vueuse/core": "^10.9.0",
+    "@vueuse/electron": "^10.9.0",
+    "@vueuse/nuxt": "^10.9.0",
+    "electron": "^29.1.4",
+    "electron-builder": "^24.13.3",
+    "nuxt": "^3.11.1",
     "nuxt-electron": "^0.7.0",
     "nuxt-icons": "^3.2.1",
     "pinia": "^2.1.7",
-    "vite-plugin-electron": "^0.28.2",
+    "vite-plugin-electron": "^0.28.4",
     "vite-plugin-electron-renderer": "^0.14.5"
   }
 }

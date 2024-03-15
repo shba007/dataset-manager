@@ -54,6 +54,9 @@ module.exports = {
         500: '#0593FA',
         600: '#2598EB',
       },
+      secondary: {
+        500: '#9333EA'
+      },
       success: {
         400: '#89E774',
         500: '#4AD42B',

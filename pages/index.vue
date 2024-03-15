@@ -9,20 +9,13 @@ const ipcRenderer = useIpcRenderer()
 const versions = ipcRenderer.invoke<string>('versions')
 
 function importImages() {
-	const importedImages = ipcRenderer.sendSync<Image[]>('open-image').value
+	const importedImages = ipcRenderer.sendSync<any>('open-image').value
 
 	if (!importedImages)
 		return
 
-	console.log(importedImages)
-
-	for (let { label, name, url, bboxes } of importedImages) {
-		if (label in datasetStore.images)
-			datasetStore.images[label].push({ name, url, bboxes })
-		else
-			datasetStore.images[label] = [{ name, url, bboxes }]
-	}
-
+	// console.log(importedImages)
+	datasetStore.addImages(importedImages)
 	router.push('/annotated')
 }
 

@@ -81,7 +81,7 @@ function ipcConnect() {
 				bboxes: annotations
 			}
 		})
-	});
+	})
 }
 
 function bootstrap() {
